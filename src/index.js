@@ -9,7 +9,7 @@ addEventListener('fetch', event => {
 	} else if (url.pathname === '/uuid' && request.method === 'GET') {
 	  return generateUUID()
 	} else {
-	  return new Response('Not found', { status: 404 })
+	  return new Response('Not found.', { status: 404 })
 	}
   }
   
